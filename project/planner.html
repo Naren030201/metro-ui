@@ -3,64 +3,68 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ticket Planner</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="planner.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Planner</title>
+    <link rel="stylesheet" href="styles/planner.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/planner.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Chennai Metro</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary " href="#">
+                <img src="images/pngegg.png" alt="" class="d-inline-block align-text-top logo">
+            </a>
+            <h4 class="text-primary me-1">Metro</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ticketHsitory.html">Tickets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="history.html">Frequently Search</a>
-          </li>
-        </ul>
-        <li class="nav-item dropdown d-flex">
-          <span class="material-symbols-outlined" id="pf">
-            account_circle_full
-          </span>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Profile
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Edit profile</a></li>
-              <li><a class="dropdown-item" href="#">Change Password</a></li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
-            </ul>
-          </div>
-        </li>
-      </div>
-    </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <label for="exampleDataList" class="form-label">Source Station</label>
-        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Station Name" required>
-        <datalist id="datalistOptions">
+            <div class="collapse navbar-collapse mb-0" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-1" aria-current="page" href="#">Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-1" href="travelcardmenu.html">Travel Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ms-1" href="planner.html">Travel Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  ms-1" href="ticket-history.html">Tickets</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Name
+            </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Modify Name</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="new.html">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <label for="exampleDataList" class="form-label">Source Station</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Station Name" required>
+                <datalist id="datalistOptions">
           <datalist id="blue">
             <option value="History">Vadapalani</option>
             <option value="Wimco Nagar Depot"></option>
@@ -90,7 +94,7 @@
             <option value="Meenambakkam"></option>
             <option value="Chennai International Airport"></option>
           </datalist>
-          <datalist id="green">
+                <datalist id="green">
             <option value="Anna Nagar East"></option>
             <option value="Anna Nagar Tower"></option>
             <option value="Arumbakkam"></option>
@@ -107,17 +111,93 @@
             <option value="Thirumangalam"></option>
             <option value="Vadapalani"></option>
           </datalist>
+                </datalist>
+            </div>
+            <div class="col-12 col-md-5">
+                <label for="exampleDataList" class="form-label">Destination Station</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Station Name">
+                <datalist id="datalistOptions">
         </datalist>
-      </div>
-      <div class="col-12 col-md-5">
-        <label for="exampleDataList" class="form-label">Destination Station</label>
-        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Station Name">
-        <datalist id="datalistOptions">
-        </datalist>
-      </div>
-    </div><br>
-    <div><a href="plan.html"><button type="button" class="btn btn-primary">plan</button></div></a><br>
-  </div>
+            </div>
+        </div><br>
+        <div><a href="plan.html"><button type="button" class="btn btn-primary">plan</button></div></a><br>
+        </div>
+        <div class="container-fluid">
+            <h3>Travel Planner</h3>
+            <div class="row g-3">
+                <div class="col">
+                    <label for="" class="lable-font">Stations </label>
+                    <i class="material-symbols-outlined">train</i><input class="form-control" type="number" value="0" aria-label="Date" disabled readonly>
+                </div>
+                <div class="col">
+                    <label for="" class="lable-font">Change </label>
+                    <i class="material-symbols-outlined">transfer_within_a_station</i><input class="form-control" type="number" value="0" aria-label="Amount" disabled readonly>
+                </div>
+                <div class="col">
+                    <label for="" class="lable-font">Amount </label><i class="material-symbols-outlined">currency_rupee</i>
+                    <input class="form-control" type="number" value="0" aria-label="Amount" disabled readonly>
+                </div>
+            </div>
+            <div class="table-plan table-responosive">
+                <table class="tb1">
+                    <thead>
+                        <span class="material-symbols-outlined r1">
+              radio_button_checked
+            </span>
+                        <tr>
+                            <th><input class="form-control" type="text" value="Source" aria-label="Disabled input example" disabled readonly></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Stations
+                  </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                    </tbody>
+                </table>
+                <table class="tb2">
+                    <thead>
+                        <span class="material-symbols-outlined r2">
+              radio_button_checked 
+            </span>
+                        <tr>
+                            <th><input class="form-control" type="text" value="Interchanging Station" aria-label="Disabled input example" disabled readonly></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Stations
+                  </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><input class="form-control" type="text" value="Destination" aria-label="Destination" disabled readonly></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <a href="view-ticket.html"><button type="button" class="btn btn-primary">Purchese ticket</button></a>
+            <a href="planner.html"><button type="button" class="btn btn-primary">Back To Planner</button></a>
+        </div>
 </body>
 
 </html>
